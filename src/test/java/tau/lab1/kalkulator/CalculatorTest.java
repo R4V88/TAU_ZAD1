@@ -7,12 +7,12 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
+    private static final Calculator calculator = new Calculator();
     private static Integer positiveA;
     private static Integer positiveB;
     private static Integer negativeA;
     private static Integer negativeB;
     private static Integer zeroNumber;
-    private static Calculator calculator = new Calculator();
 
     @BeforeEach
     void setUp() {
@@ -85,7 +85,4 @@ class CalculatorTest {
         assertNotEquals(positiveA, positiveB);
     }
 
-    @Test
-    void odejmowanie() {
-    }
 }
